@@ -573,7 +573,7 @@ namespace PoGo.NecroBot.GUI
             pokemonsIHave[146] = true;
             this.UIThread(()=> {
                 this.listPokemonStats.Clear();
-                for (int i = 1; i < 149; i++) {
+                for (int i = 1; i <= 151; i++) {
                     if (pokemonsIHave[i] != true) {
                         ListViewItem thisOne = new ListViewItem(((POGOProtos.Enums.PokemonId)i).ToString());
                         thisOne.ImageIndex = i;
